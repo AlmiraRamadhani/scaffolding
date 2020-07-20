@@ -21,11 +21,12 @@ class Admin extends CI_Controller
 		$this->load->view('templates/admin_navbar');
 		$this->load->view('templates/admin_sidebar', $data);
 		$this->load->view('admin/dashboard', $data);
+		$this->load->view('templates/admin_footer', $data);
 	}
 	function login()
 	{
 		$username = $this->input->post('username');
-		$password = $this->input - post('password');
+		$password = $this->input->post('password');
 		$this->form_validation->set_rules('username', 'Username', 'trim|required');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required');
 		if ($this->form_validation->run() != false) {
@@ -75,6 +76,7 @@ class Admin extends CI_Controller
 			$this->load->view('templates/admin_navbar');
 			$this->load->view('templates/admin_sidebar', $data);
 			$this->load->view('admin/change_password', $data);
+			$this->load->view('templates/admin_footer', $data);
 		} else {
 			$password = md5($this->input->post('password1'));
 			$username = $this->session->userdata('username');

@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4 fixed">
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
 	<!-- Sidebar -->
 	<div class="sidebar">
 		<!-- Sidebar user (optional) -->
@@ -12,7 +12,7 @@
 		</div>
 		<!-- Sidebar Menu -->
 		<nav class="mt-2">
-			<ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 				<!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 				<li class="nav-header">Dashboard</li>
